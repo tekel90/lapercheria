@@ -35,7 +35,7 @@
                     <li><a href="#" data-text class="activo">Inicio</a></li>
                     <li><a href="#nosotros" data-text>Nosotros</a></li>
                     <li><a href="#productos" data-text>Productos</a></li>
-                    <li><a href="#dondeEstamos" data-text>¿Donde estamos?</a></li>
+                    <li><a href="#sucursales" data-text>Sucursales</a></li>
                     <li><a href="#contacto" data-text>Contacto</a></li>
                 </ul>
             </div>
@@ -119,21 +119,36 @@
         </section>
 
         <!-- mapa -->
-        <section class="where" id="dondeEstamos">
+        <section class="where">
 
 
             <div class="where-container">
 
-                <div class="where-title">
-                    <h2>Donde estamos</h2>
+                <div class="where-title" id="sucursales">
+                    <h2>Sucursales</h2>
                     <hr>
                 </div>
 
+                <div class="where-sucursales">
+                    <button class="tablinks" onclick="openMap(event, 'once')">Balvanera</button>
+                    <button class="tablinks" onclick="openMap(event, 'paternal')">Paternal</button>
+                </div>
+
                 <div class="where-content">
-                    <<iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.176311844632!2d-58.4067121!3d-34.6030469!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf6d2037e18099289!2sLapercheria!5e0!3m2!1ses!2sar!4v1598316085890!5m2!1ses!2sar"
-                        width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""
-                        aria-hidden="false" tabindex="0"></iframe>
+
+                    <div class="tab-content" id="once">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.0442533449223!2d-58.408900784688015!3d-34.603042464969604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca8d6f47ed8d%3A0xf6d2037e18099289!2sLapercheria!5e0!3m2!1ses!2sar!4v1598339856533!5m2!1ses!2sar"
+                            width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+
+                    <div class="tab-content" id="paternal">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.968597764902!2d-58.46399318468788!3d-34.60495556507076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca01ed0002ab%3A0x24e570b06df50208!2sAlejandro%20Magari%C3%B1os%20Cervantes%201464%2C%20C1416DYD%20CABA!5e0!3m2!1ses!2sar!4v1598339931671!5m2!1ses!2sar"
+                            width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""
+                            aria-hidden="false" tabindex="0"></iframe>
+                    </div>
                 </div>
         </section>
         <!-- mapa -->
@@ -142,7 +157,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer" id="contacto">
+    <footer class="footer">
 
         <div class="skew-arriba"></div>
 
@@ -151,8 +166,8 @@
         <div class="ejeZfooter">
             <div class="footer-content">
 
-                <div class="footer-title">
-                    <h2>Formulario de contacto</h2>
+                <div class="footer-title" id="contacto">
+                    <h2>Contactate</h2>
                     <hr>
                 </div>
 

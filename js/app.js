@@ -18,7 +18,6 @@ btnMenu.addEventListener('click', () => {
         menu.style.transition = "0.5s";
         activador = true;
     }
-
 });
 
 /* Intercalar clase active */
@@ -34,6 +33,10 @@ enlaces.forEach((element) => {
         });
 
         event.target.classList.add('activo');
+        menu.style.left = "-100%";
+        menu.style.transition = "0.5s";
+        activador = true;
+        document.querySelector('.btn-menu i').classList.toggle('fa-times');
     });
 });
 
@@ -90,13 +93,16 @@ verAbajo.addEventListener('click', () => {
     document.documentElement.scrollTop = 1000; /* para chrome */
 });
 
-/* darle mas efecto al menu */
-/* const enlaces2 = document.querySelectorAll('ul li a');
-const btnMenu2 = document.querySelector('.btn-menu');
-const menu2 = document.querySelector('.list-container');
-let on_off = true;
-
-enlaces2.forEach((link2) => {
-    var links = link2.innerText;
-    link2.dataset.text = links;
-}) */
+function openMap(evt, suc) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tab-content");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(suc).style.display = "block";
+    evt.currentTarget.className += " active";
+}
