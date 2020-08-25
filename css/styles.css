@@ -60,6 +60,31 @@ body {
 
 /* Go top */
 
+/* whatsapp */
+
+.whatsapp {
+    background-color: #4dc247;
+    position: fixed;
+    bottom: 170px;
+    right: 0;
+    z-index: 1;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp img {
+    width: 35px;
+    height: 35px;
+    display: block;
+    border-style: none;
+}
+
+/* whatsapp */
+
 /* skew */
 .skew-abajo {
     position: absolute;
@@ -343,7 +368,7 @@ body {
 }
 
 .our-projects .container-project .project-title h2 {
-    font-size: 40px;
+    font-size: 30px;
     color: #fff;
     font-weight: normal;
 }
@@ -561,7 +586,7 @@ body {
     justify-content: center;
 }
 
-.footer .footer-content .formulario-content #formulario .send button {
+.footer .footer-content .formulario-content #formulario .send input {
     width: 150px;
     height: 40px;
     background: var(--light-brown);
@@ -576,7 +601,7 @@ body {
     transition: 0.5s;
 }
 
-.footer .footer-content .formulario-content #formulario .send button:hover {
+.footer .footer-content .formulario-content #formulario .send input:hover {
     background: var(--brown);
 }
 
