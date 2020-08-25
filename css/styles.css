@@ -367,6 +367,52 @@ body {
 
 /* Nuestros Proyectos */
 
+/* Where - mapa */
+
+.where {
+    width: 100%;
+    margin-top: 100px;
+}
+
+.where .where-container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.where .where-container .where-title {
+    width: 50%;
+    margin: auto;
+    border: 2px solid var(--brown);
+    padding: 15px;
+}
+
+.where .where-container .where-title h2 {
+    text-align: center;
+    color: var(--black);
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+
+.where .where-container .where-title hr {
+    width: 80%;
+    margin: auto;
+    background: #fff;
+    width: 80%;
+}
+
+.where .where-container .where-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+}
+
+/* Where - mapa */
+
 /* Footer */
 
 .footer {
