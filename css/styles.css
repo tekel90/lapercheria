@@ -113,6 +113,16 @@ body {
     color: var(--black);
 }
 
+/* .menu .social {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu .social p {
+    margin: 0 10px;
+} */
+
 .menu .list-container {
     margin-right: 20px;
 }
@@ -590,7 +600,7 @@ body {
     height: 70px;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     border-top: 2px solid #fff;
 }
@@ -599,6 +609,10 @@ body {
     color: #fff;
     font-size: 20px;
     text-align: center;
+}
+
+.footer .footer-media a {
+    margin: 0 5px;
 }
 
 /* Footer */
@@ -748,6 +762,10 @@ body {
 
     .footer .formulario-content #formulario .mensaje-form p {
         font-size: 17px;
+    }
+
+    .footer .footer-media {
+        flex-wrap: nowrap;
     }
 }
 

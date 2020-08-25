@@ -89,8 +89,8 @@ goTop.addEventListener('click', () => {
 let verAbajo = document.querySelector('#abajo');
 
 verAbajo.addEventListener('click', () => {
-    document.body.scrollTop = 1000; /* para safari */
-    document.documentElement.scrollTop = 1000; /* para chrome */
+    document.body.scrollTop = 850; /* para safari */
+    document.documentElement.scrollTop = 850; /* para chrome */
 });
 
 function openMap(evt, suc) {
@@ -106,3 +106,6 @@ function openMap(evt, suc) {
     document.getElementById(suc).style.display = "block";
     evt.currentTarget.className += " active";
 }
+
+/* abrir un mapa automatico */
+document.getElementById("defaultOpen").click();
